@@ -136,7 +136,8 @@ class FormProfile
     memorials: %w[40-1330M],
     pension_burial: %w[21P-0969 21P-530EZ 21P-527EZ 21-2680 21P-601 21P-0537],
     vre_counseling: ['28-8832'],
-    vre_readiness: %w[28-1900]
+    vre_readiness: %w[28-1900],
+    survivors_benefits: ['21P-534ez']
   }.freeze
 
   FORM_ID_TO_CLASS = {
@@ -210,7 +211,8 @@ class FormProfile
     '21P-0517-1-UPLOAD' => ::FormProfiles::FormUpload,
     '21P-0518-1-UPLOAD' => ::FormProfiles::FormUpload,
     '21P-0519C-1-UPLOAD' => ::FormProfiles::FormUpload,
-    '21-8951-2-UPLOAD' => ::FormProfiles::FormUpload
+    '21-8951-2-UPLOAD' => ::FormProfiles::FormUpload,
+    '21P-534ez' => ::FormProfiles::VA21p534ez
   }.freeze
 
   APT_REGEX = /\S\s+((apt|apartment|unit|ste|suite).+)/i
