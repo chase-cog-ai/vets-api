@@ -2,6 +2,10 @@
 
 require 'rails_helper'
 
+# Tests for Lighthouse::Form526ClaimPdfCheck job
+#
+# Verifies that the job correctly checks for Form 526 PDF presence in
+# Lighthouse claims and logs the appropriate results.
 RSpec.describe Lighthouse::Form526ClaimPdfCheck, type: :job do
   let(:submission) { create(:form526_submission, submitted_claim_id: 123_456) }
   let(:service) { double('BenefitsClaims::Service') }
